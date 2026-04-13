@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_application_1/app/routes/app_routes.dart';
 import 'package:flutter_application_1/app/shared/themes/app_colors.dart';
 import 'package:flutter_application_1/app/shared/widgets/app_button_eleveted.dart';
 import 'package:flutter_application_1/app/shared/widgets/app_button_outline.dart';
@@ -22,19 +23,21 @@ class Survey2View extends GetView<Survey2ViewController> {
             SizedBox(height: 50),
             AppStepper(currentPage: 1, totalSteps: 5),
             SizedBox(height: 30),
-            Icon(Icons.arrow_back, size: 30),
+            GestureDetector(
+              onTap: () {
+                Get.toNamed(AppRoutes.survey_1);
+              },
+              child: Icon(Icons.arrow_back, size: 30),
+            ),
             SizedBox(height: 20),
             _buildBody(),
-            SizedBox(height: 29),
+            SizedBox(height: 30),
             Expanded(child: _buildGrid()),
 
-            SizedBox(height: 12),
-
             AppButtonOutline(title: "Skip", onPressed: () {}),
-
             SizedBox(height: 10),
-
             AppButton(title: "Continue", onPressed: () {}),
+            SizedBox(height: 50),
           ],
         ),
       ),
@@ -78,8 +81,8 @@ class Survey2View extends GetView<Survey2ViewController> {
 
   Widget _buildGrid() {
     return GridView.builder(
-      padding: const EdgeInsets.all(16),
       itemCount: 9,
+      padding: EdgeInsets.all(10),
       gridDelegate: const SliverGridDelegateWithFixedCrossAxisCount(
         crossAxisCount: 3,
         crossAxisSpacing: 12,

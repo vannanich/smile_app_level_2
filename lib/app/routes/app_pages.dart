@@ -49,14 +49,14 @@ class AppPages {
       name: AppRoutes.survey_1,
       page: () => Survey1View(),
       binding: Survey1ViewBinding(),
-      transition: Transition.circularReveal,
+      transition: Transition.rightToLeft,
       transitionDuration: Duration(milliseconds: 900),
     ),
     GetPage(
       name: AppRoutes.survey_2,
       page: () => Survey2View(),
       binding: Survey2ViewBinding(),
-      transition: Transition.circularReveal,
+      transition: Transition.cupertino,
       transitionDuration: Duration(milliseconds: 900),
     ),
   ];
