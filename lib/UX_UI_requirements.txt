@@ -1,0 +1,249 @@
+😊 Smile App – Final UX/UI Requirement Document
+🎯 App Type:
+
+
+
+Motivation & Mental Wellness Mobile Application
+
+🧭 1️⃣ User Flow (Very Important)
+Splash Screen
+Onboarding
+Survey Questions
+Login / Register / Continue as Guest
+Home Screen
+Navigation via Bottom Bar
+🟣 1. Splash Screen
+App logo (Smile 😊)
+Soft animation
+Calm background gradient
+2–3 seconds loading
+
+🟣 2. Onboarding Screens (3 Screens)
+
+Screen 1:
+
+“Welcome to Smile App”
+Short motivational message
+
+Screen 2:
+
+“Track Your Mood & Improve Your Life”
+
+Screen 3:
+
+“Stay Positive Every Day”
+
+Design must feel:
+
+Warm
+Calm
+Positive
+
+🟣 3. Survey Question Screen
+
+Purpose: Personalize user experience.
+
+Example Questions:
+
+How do you feel today?
+😊 Happy
+😐 Neutral
+😔 Sad
+😰 Stressed
+What do you need most?
+Motivation
+Relaxation
+Focus
+Emotional support
+Do you want daily reminders?
+
+
+🟣 4. Authentication Screen
+
+Options:
+
+Login
+Register
+Continue as Guest
+
+Design:
+
+Simple
+Clean form
+Social login optional
+Friendly message
+
+
+🤦‍♀️ Face Scan Screen (Mandatory Step)
+🎯 Purpose:
+
+Check if user is smiling before entering app.
+
+🧭 UI Elements:
+Front camera preview
+Face detection frame (circle/box)
+Instruction text:
+
+😊 “Please smile to continue to Smile App”
+
+🧠 System Check:
+Face detected ✔
+Smile detected ✔
+😊 If SMILE detected:
+
+➡️ Go to Home Screen 🏠
+
+😐 If NOT smiling:
+
+Show message:
+
+“We only allow positive energy 😊 Please smile and try again”
+
+Buttons:
+
+🔄 Try Again
+(Optional after multiple tries) 👉 “Continue Anyway”
+
+🏠 5. Home Screen (Main Important Screen)
+
+This is the main dashboard.
+
+Top Section:
+
+Greeting:
+“Good Morning 😊 Keep Smiling!”
+Notification icon
+
+Main Feature Cards:
+
+🩺 Chat with Doctor (MAIN PRIORITY)
+😊 Track Mood
+📚 Read Book
+💬 Chat AI
+📝 Read Quotes
+🎥 Watch Motivation Videos
+🌙 Sleeping Mode
+
+Must feel:
+
+Safe
+Trustworthy
+Professional
+
+😊 Track Mood Screen
+Mood selection emojis
+Mood history chart
+Daily mood log
+Simple analytics
+
+📝 Quotes Screen
+Large beautiful quote card
+Background image
+Button: Change Wallpaper
+Save / Share option
+
+User can:
+✔ Change background wallpaper of quote screen
+
+🎥 Watch Motivation Video Screen
+Vertical video scroll (Reels style)
+Categories:
+Motivation
+Funny
+Like / Save buttons
+
+🌙 Sleeping Mode Screen
+
+Dark calm UI
+Soft purple/blue theme
+Relax music option
+Sleep timer
+Reduce notification brightness
+
+🎯 Bottom Navigation Bar
+
+Must include buttom navigation bar:
+
+🏠 Home
+🎯 Goal
+🎬 Reel
+👤 Profile
+
+Clear active indicator.
+
+🎯 Goal / Task Screen (Very Important)
+
+User can:
+
+Add task
+Set time
+Enable reminder
+
+Example:
+
+Task:
+Reading Book – 11:30 AM
+
+At 11:30 AM:
+App sends push notification:
+
+“It’s time to read your book 📚 Stay consistent!”
+
+UI Must Include:
+
+Task list
+Add task button (+)
+Time picker
+Reminder toggle
+Mark as Done
+Progress indicator
+
+📻Reel Screen (Motivation + Funny Videos)
+
+This is like TikTok style feed.
+
+📌 User can:
+🎥 Watch short videos
+Motivation videos
+Funny videos
+❤️ Like video
+🔖 Save video
+🔄 Swipe up/down to change video
+
+👤 Profile Screen
+
+User can:
+
+Edit profile
+Change wallpaper
+Enable sleeping mode
+Manage notifications
+Logout
+
+🎨 Design Style Requirements
+
+Mood:
+
+Calm
+Positive
+Friendly
+Emotional support feeling
+
+
+
+
+Smile App Includes:
+
+✅ Splash
+✅ Onboarding
+✅ Survey personalization
+✅ Login/Register/Guest
+✅ Chat Doctor (main feature)
+✅ Mood tracking
+✅ Books
+✅ AI Chat
+✅ Quotes (change wallpaper)
+✅ Motivation videos
+✅ Sleeping mode
+✅ Goal system with time alert
+✅ Bottom navigation
