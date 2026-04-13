@@ -5,4 +5,5 @@ class AppRoutes {
   static const onboarding_3 = '/onboarding_3';
   static const login = '/login_screen';
   static const survey_1 = '/survey_1';
+  static const survey_2 = '/survey_2';
 }

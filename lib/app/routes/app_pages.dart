@@ -4,6 +4,7 @@ import 'package:flutter_application_1/app/modules/screen/onboarding/onboarding/o
 import 'package:flutter_application_1/app/modules/screen/onboarding_2/onboarding_2/onboarding_2_view.dart';
 import 'package:flutter_application_1/app/modules/screen/onboarding_3/onboarding_3/onboarding_3_view.dart';
 import 'package:flutter_application_1/app/modules/screen/survey/survey_1/survey_1_view.dart';
+import 'package:flutter_application_1/app/modules/screen/survey/survey_2/survey_2_view.dart';
 import 'package:get/get.dart';
 
 import 'app_routes.dart';
@@ -48,6 +49,13 @@ class AppPages {
       name: AppRoutes.survey_1,
       page: () => Survey1View(),
       binding: Survey1ViewBinding(),
+      transition: Transition.circularReveal,
+      transitionDuration: Duration(milliseconds: 900),
+    ),
+    GetPage(
+      name: AppRoutes.survey_2,
+      page: () => Survey2View(),
+      binding: Survey2ViewBinding(),
       transition: Transition.circularReveal,
       transitionDuration: Duration(milliseconds: 900),
     ),
