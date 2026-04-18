@@ -17,7 +17,7 @@ class AppStepper extends StatelessWidget {
       children: List.generate(totalSteps, (index) {
         return Container(
           margin: const EdgeInsets.symmetric(horizontal: 2),
-          width: 70,
+          width: 60,
           height: 4,
           decoration: BoxDecoration(
             color: currentPage == index ? AppColors.secondary : Colors.grey,

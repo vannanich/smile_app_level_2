@@ -7,24 +7,24 @@ import 'package:flutter_application_1/app/shared/widgets/app_grid.dart';
 import 'package:flutter_application_1/app/shared/widgets/app_stepper.dart';
 import 'package:get/get.dart';
 
-part 'survey_2_binding.dart';
-part 'survey_2_controller.dart';
+part 'survey_3_binding.dart';
+part 'survey_3_controller.dart';
 
-class Survey2View extends GetView<Survey2ViewController> {
-  const Survey2View({super.key});
+class Survey3View extends GetView<Survey3ViewController> {
+  const Survey3View({super.key});
 
   @override
   Widget build(BuildContext context) {
     final List<Map<String, String>> myData = [
-      {'title': 'Calm', 'image': 'assets/Feeling/😊.png'},
-      {'title': 'Calm', 'image': 'assets/Feeling/😌.png'},
-      {'title': 'Sad', 'image': 'assets/Feeling/😢.png'},
-      {'title': 'Angry', 'image': 'assets/Feeling/😤.png'},
-      {'title': 'Anxious', 'image': 'assets/Feeling/😢.png'},
-      {'title': 'Tired', 'image': 'assets/Feeling/😴.png'},
-      {'title': 'love', 'image': 'assets/Feeling/🥰.png'},
-      {'title': 'Exited', 'image': 'assets/Feeling/🤩.png'},
-      {'title': 'Confused', 'image': 'assets/Feeling/🤔 (1).png'},
+      {'title': 'Motivation', 'image': 'assets/need_most/💪.png'},
+      {'title': 'Calm', 'image': 'assets/need_most/🧘.png'},
+      {'title': 'Focus', 'image': 'assets/need_most/💡.png'},
+      {'title': 'Happiness', 'image': 'assets/need_most/😊.png'},
+      {'title': 'Sleep', 'image': 'assets/need_most/🌙.png'},
+      {'title': 'Self-Love', 'image': 'assets/need_most/❤️.png'},
+      {'title': 'Clarity', 'image': 'assets/need_most/🧠.png'},
+      {'title': 'Energy', 'image': 'assets/need_most/⚡.png'},
+      {'title': 'Connection', 'image': 'assets/need_most/🤝.png'},
     ];
     return Scaffold(
       backgroundColor: AppColors.primary,
@@ -34,11 +34,11 @@ class Survey2View extends GetView<Survey2ViewController> {
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
             SizedBox(height: 50),
-            AppStepper(currentPage: 1, totalSteps: 6),
+            AppStepper(currentPage: 2, totalSteps: 6),
             SizedBox(height: 30),
             GestureDetector(
               onTap: () {
-                Get.toNamed(AppRoutes.survey_1);
+                Get.toNamed(AppRoutes.survey_2);
               },
               child: Icon(Icons.arrow_back, size: 30),
             ),
@@ -50,14 +50,14 @@ class Survey2View extends GetView<Survey2ViewController> {
             AppButtonOutline(
               title: "Skip",
               onPressed: () {
-                Get.toNamed(AppRoutes.survey_3);
+                Get.toNamed(AppRoutes.survey_4);
               },
             ),
             SizedBox(height: 10),
             AppButton(
               title: "Continue",
               onPressed: () {
-                Get.toNamed(AppRoutes.survey_3);
+                Get.toNamed(AppRoutes.survey_4);
               },
             ),
             SizedBox(height: 50),
@@ -75,7 +75,7 @@ class Survey2View extends GetView<Survey2ViewController> {
             mainAxisAlignment: MainAxisAlignment.center,
             children: [
               Text(
-                "How",
+                "What",
                 style: TextStyle(
                   color: AppColors.secondary,
                   fontWeight: FontWeight.bold,
@@ -83,7 +83,7 @@ class Survey2View extends GetView<Survey2ViewController> {
                 ),
               ),
               Text(
-                "  are you feeling today ?",
+                "  do you need the most today ?",
                 style: TextStyle(
                   color: Colors.black,
                   fontWeight: FontWeight.bold,
@@ -95,7 +95,7 @@ class Survey2View extends GetView<Survey2ViewController> {
         ),
         SizedBox(height: 10),
         Text(
-          "  are you feeling today",
+          "  Choose what matter the most to you right now",
           style: TextStyle(color: Colors.grey, fontSize: 14),
         ),
       ],

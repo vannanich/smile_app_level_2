@@ -10,6 +10,7 @@ dependencies:
   flutter:
     sdk: flutter
   get: ^4.7.3
+  google_fonts: ^6.0.0
 
 dev_dependencies:
   flutter_test:
@@ -20,3 +21,7 @@ flutter:
   uses-material-design: true
   assets:
     - assets/
+    - assets/Feeling/
+    - assets/need_most/
+    - assets/goals/
+    - assets/What_Smile/

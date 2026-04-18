@@ -7,24 +7,24 @@ import 'package:flutter_application_1/app/shared/widgets/app_grid.dart';
 import 'package:flutter_application_1/app/shared/widgets/app_stepper.dart';
 import 'package:get/get.dart';
 
-part 'survey_2_binding.dart';
-part 'survey_2_controller.dart';
+part 'survey_6_binding.dart';
+part 'survey_6_controller.dart';
 
-class Survey2View extends GetView<Survey2ViewController> {
-  const Survey2View({super.key});
+class Survey6View extends GetView<Survey6ViewController> {
+  const Survey6View({super.key});
 
   @override
   Widget build(BuildContext context) {
     final List<Map<String, String>> myData = [
-      {'title': 'Calm', 'image': 'assets/Feeling/😊.png'},
-      {'title': 'Calm', 'image': 'assets/Feeling/😌.png'},
-      {'title': 'Sad', 'image': 'assets/Feeling/😢.png'},
-      {'title': 'Angry', 'image': 'assets/Feeling/😤.png'},
-      {'title': 'Anxious', 'image': 'assets/Feeling/😢.png'},
-      {'title': 'Tired', 'image': 'assets/Feeling/😴.png'},
-      {'title': 'love', 'image': 'assets/Feeling/🥰.png'},
-      {'title': 'Exited', 'image': 'assets/Feeling/🤩.png'},
-      {'title': 'Confused', 'image': 'assets/Feeling/🤔 (1).png'},
+      {'title': 'Reduce Stress', 'image': 'assets/What_Smile/👨_👩_👧_👦.png'},
+      {'title': 'Sleep Better', 'image': 'assets/What_Smile/🌿 (1).png'},
+      {'title': 'Stay Inspired', 'image': 'assets/What_Smile/🎵.png'},
+      {'title': 'Animal', 'image': 'assets/What_Smile/🐾.png'},
+      {'title': 'Food', 'image': 'assets/What_Smile/🍕.png'},
+      {'title': 'Travel', 'image': 'assets/What_Smile/✈️.png'},
+      {'title': 'Books', 'image': 'assets/What_Smile/📚.png'},
+      {'title': 'Games', 'image': 'assets/What_Smile/🎮.png'},
+      {'title': 'Art', 'image': 'assets/What_Smile/🎨.png'},
     ];
     return Scaffold(
       backgroundColor: AppColors.primary,
@@ -75,7 +75,7 @@ class Survey2View extends GetView<Survey2ViewController> {
             mainAxisAlignment: MainAxisAlignment.center,
             children: [
               Text(
-                "How",
+                "How ",
                 style: TextStyle(
                   color: AppColors.secondary,
                   fontWeight: FontWeight.bold,
@@ -83,7 +83,7 @@ class Survey2View extends GetView<Survey2ViewController> {
                 ),
               ),
               Text(
-                "  are you feeling today ?",
+                "can we help you ?",
                 style: TextStyle(
                   color: Colors.black,
                   fontWeight: FontWeight.bold,
@@ -95,7 +95,7 @@ class Survey2View extends GetView<Survey2ViewController> {
         ),
         SizedBox(height: 10),
         Text(
-          "  are you feeling today",
+          " Tell us what you need right now",
           style: TextStyle(color: Colors.grey, fontSize: 14),
         ),
       ],

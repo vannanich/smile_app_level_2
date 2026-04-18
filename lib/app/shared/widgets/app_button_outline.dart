@@ -20,10 +20,10 @@ class AppButtonOutline extends StatelessWidget {
       width: double.infinity,
       child: OutlinedButton(
         style: OutlinedButton.styleFrom(
-          // backgroundColor: AppColors.secondary,
           shape: RoundedRectangleBorder(
             borderRadius: BorderRadius.circular(10),
           ),
+          side: BorderSide(width: 2, color: AppColors.secondary),
         ),
         onPressed: onPressed,
         child: Row(
@@ -31,7 +31,11 @@ class AppButtonOutline extends StatelessWidget {
           children: [
             Text(
               title,
-              style: const TextStyle(color: AppColors.secondary, fontSize: 16),
+              style: const TextStyle(
+                color: AppColors.secondary,
+                fontSize: 16,
+                fontWeight: FontWeight.bold,
+              ),
             ),
             if (icon != null) ...[
               const SizedBox(width: 20),

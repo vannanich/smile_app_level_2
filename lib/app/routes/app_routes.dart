@@ -6,4 +6,8 @@ class AppRoutes {
   static const login = '/login_screen';
   static const survey_1 = '/survey_1';
   static const survey_2 = '/survey_2';
+  static const survey_3 = '/survey_3';
+  static const survey_4 = '/survey_4';
+  static const survey_5 = '/survey_5';
+  static const survey_6 = '/survey_6';
 }

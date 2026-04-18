@@ -22,7 +22,7 @@ class Survey1View extends GetView<Survey1ViewController> {
         child: Column(
           children: [
             SizedBox(height: 50),
-            AppStepper(currentPage: 0, totalSteps: 5),
+            AppStepper(currentPage: 0, totalSteps: 6),
             AppSpace(height: 120),
             SizedBox(height: 20),
             _buildSelectAge(),

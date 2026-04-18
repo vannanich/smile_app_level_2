@@ -5,6 +5,9 @@ import 'package:flutter_application_1/app/modules/screen/onboarding_2/onboarding
 import 'package:flutter_application_1/app/modules/screen/onboarding_3/onboarding_3/onboarding_3_view.dart';
 import 'package:flutter_application_1/app/modules/screen/survey/survey_1/survey_1_view.dart';
 import 'package:flutter_application_1/app/modules/screen/survey/survey_2/survey_2_view.dart';
+import 'package:flutter_application_1/app/modules/screen/survey/survey_3/survey_3_view.dart';
+import 'package:flutter_application_1/app/modules/screen/survey/survey_4/survey_4_view.dart';
+import 'package:flutter_application_1/app/modules/screen/survey/survey_5/survey_5_view.dart';
 import 'package:get/get.dart';
 
 import 'app_routes.dart';
@@ -56,6 +59,27 @@ class AppPages {
       name: AppRoutes.survey_2,
       page: () => Survey2View(),
       binding: Survey2ViewBinding(),
+      transition: Transition.cupertino,
+      transitionDuration: Duration(milliseconds: 900),
+    ),
+    GetPage(
+      name: AppRoutes.survey_3,
+      page: () => Survey3View(),
+      binding: Survey3ViewBinding(),
+      transition: Transition.cupertino,
+      transitionDuration: Duration(milliseconds: 900),
+    ),
+    GetPage(
+      name: AppRoutes.survey_4,
+      page: () => Survey4View(),
+      binding: Survey4ViewBinding(),
+      transition: Transition.cupertino,
+      transitionDuration: Duration(milliseconds: 900),
+    ),
+    GetPage(
+      name: AppRoutes.survey_5,
+      page: () => Survey5View(),
+      binding: Survey5ViewBinding(),
       transition: Transition.cupertino,
       transitionDuration: Duration(milliseconds: 900),
     ),

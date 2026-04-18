@@ -7,24 +7,27 @@ import 'package:flutter_application_1/app/shared/widgets/app_grid.dart';
 import 'package:flutter_application_1/app/shared/widgets/app_stepper.dart';
 import 'package:get/get.dart';
 
-part 'survey_2_binding.dart';
-part 'survey_2_controller.dart';
+part 'survey_5_binding.dart';
+part 'survey_5_controller.dart';
 
-class Survey2View extends GetView<Survey2ViewController> {
-  const Survey2View({super.key});
+class Survey5View extends GetView<Survey5ViewController> {
+  const Survey5View({super.key});
 
   @override
   Widget build(BuildContext context) {
     final List<Map<String, String>> myData = [
-      {'title': 'Calm', 'image': 'assets/Feeling/😊.png'},
-      {'title': 'Calm', 'image': 'assets/Feeling/😌.png'},
-      {'title': 'Sad', 'image': 'assets/Feeling/😢.png'},
-      {'title': 'Angry', 'image': 'assets/Feeling/😤.png'},
-      {'title': 'Anxious', 'image': 'assets/Feeling/😢.png'},
-      {'title': 'Tired', 'image': 'assets/Feeling/😴.png'},
-      {'title': 'love', 'image': 'assets/Feeling/🥰.png'},
-      {'title': 'Exited', 'image': 'assets/Feeling/🤩.png'},
-      {'title': 'Confused', 'image': 'assets/Feeling/🤔 (1).png'},
+      {
+        'title': 'Family & Friends',
+        'image': 'assets/What_Smile/👨_👩_👧_👦.png',
+      },
+      {'title': 'Native', 'image': 'assets/What_Smile/🌿 (1).png'},
+      {'title': 'Music', 'image': 'assets/What_Smile/🎵.png'},
+      {'title': 'Animal', 'image': 'assets/What_Smile/🐾.png'},
+      {'title': 'Food', 'image': 'assets/What_Smile/🍕.png'},
+      {'title': 'Travel', 'image': 'assets/What_Smile/✈️.png'},
+      {'title': 'Books', 'image': 'assets/What_Smile/📚.png'},
+      {'title': 'Games', 'image': 'assets/What_Smile/🎮.png'},
+      {'title': 'Art', 'image': 'assets/What_Smile/🎨.png'},
     ];
     return Scaffold(
       backgroundColor: AppColors.primary,
@@ -34,7 +37,7 @@ class Survey2View extends GetView<Survey2ViewController> {
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
             SizedBox(height: 50),
-            AppStepper(currentPage: 1, totalSteps: 6),
+            AppStepper(currentPage: 4, totalSteps: 6),
             SizedBox(height: 30),
             GestureDetector(
               onTap: () {
@@ -50,14 +53,14 @@ class Survey2View extends GetView<Survey2ViewController> {
             AppButtonOutline(
               title: "Skip",
               onPressed: () {
-                Get.toNamed(AppRoutes.survey_3);
+                Get.toNamed(AppRoutes.survey_6);
               },
             ),
             SizedBox(height: 10),
             AppButton(
               title: "Continue",
               onPressed: () {
-                Get.toNamed(AppRoutes.survey_3);
+                Get.toNamed(AppRoutes.survey_6);
               },
             ),
             SizedBox(height: 50),
@@ -75,7 +78,7 @@ class Survey2View extends GetView<Survey2ViewController> {
             mainAxisAlignment: MainAxisAlignment.center,
             children: [
               Text(
-                "How",
+                "What ",
                 style: TextStyle(
                   color: AppColors.secondary,
                   fontWeight: FontWeight.bold,
@@ -83,7 +86,7 @@ class Survey2View extends GetView<Survey2ViewController> {
                 ),
               ),
               Text(
-                "  are you feeling today ?",
+                "make you smile ?",
                 style: TextStyle(
                   color: Colors.black,
                   fontWeight: FontWeight.bold,
@@ -95,7 +98,7 @@ class Survey2View extends GetView<Survey2ViewController> {
         ),
         SizedBox(height: 10),
         Text(
-          "  are you feeling today",
+          "  Pick the thinig that brings yoou the most joy",
           style: TextStyle(color: Colors.grey, fontSize: 14),
         ),
       ],
