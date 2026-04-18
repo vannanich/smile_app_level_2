@@ -16,18 +16,15 @@ class Survey5View extends GetView<Survey5ViewController> {
   @override
   Widget build(BuildContext context) {
     final List<Map<String, String>> myData = [
-      {
-        'title': 'Family & Friends',
-        'image': 'assets/What_Smile/👨_👩_👧_👦.png',
-      },
-      {'title': 'Native', 'image': 'assets/What_Smile/🌿 (1).png'},
-      {'title': 'Music', 'image': 'assets/What_Smile/🎵.png'},
-      {'title': 'Animal', 'image': 'assets/What_Smile/🐾.png'},
-      {'title': 'Food', 'image': 'assets/What_Smile/🍕.png'},
-      {'title': 'Travel', 'image': 'assets/What_Smile/✈️.png'},
-      {'title': 'Books', 'image': 'assets/What_Smile/📚.png'},
-      {'title': 'Games', 'image': 'assets/What_Smile/🎮.png'},
-      {'title': 'Art', 'image': 'assets/What_Smile/🎨.png'},
+      {'title': 'Mindfulness', 'image': 'assets/building_skill/🧘.png'},
+      {'title': 'Communication', 'image': 'assets/building_skill/💬.png'},
+      {'title': 'Time Management', 'image': 'assets/building_skill/⏰.png'},
+      {'title': 'Discipline', 'image': 'assets/building_skill/💪.png'},
+      {'title': 'Focus', 'image': 'assets/building_skill/🎯 (1).png'},
+      {'title': 'Self-Care', 'image': 'assets/building_skill/❤️.png'},
+      {'title': 'Critical-Thinking', 'image': 'assets/building_skill/🧠.png'},
+      {'title': 'Leader-Ship', 'image': 'assets/building_skill/🤝 (2).png'},
+      {'title': 'Creativity', 'image': 'assets/building_skill/🎨 (2).png'},
     ];
     return Scaffold(
       backgroundColor: AppColors.primary,

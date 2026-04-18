@@ -16,15 +16,15 @@ class Survey6View extends GetView<Survey6ViewController> {
   @override
   Widget build(BuildContext context) {
     final List<Map<String, String>> myData = [
-      {'title': 'Reduce Stress', 'image': 'assets/What_Smile/👨_👩_👧_👦.png'},
-      {'title': 'Sleep Better', 'image': 'assets/What_Smile/🌿 (1).png'},
-      {'title': 'Stay Inspired', 'image': 'assets/What_Smile/🎵.png'},
-      {'title': 'Animal', 'image': 'assets/What_Smile/🐾.png'},
-      {'title': 'Food', 'image': 'assets/What_Smile/🍕.png'},
-      {'title': 'Travel', 'image': 'assets/What_Smile/✈️.png'},
-      {'title': 'Books', 'image': 'assets/What_Smile/📚.png'},
-      {'title': 'Games', 'image': 'assets/What_Smile/🎮.png'},
-      {'title': 'Art', 'image': 'assets/What_Smile/🎨.png'},
+      {'title': 'Reduce Stress', 'image': 'assets/How_help/🧘.png'},
+      {'title': 'Sleep Better', 'image': 'assets/How_help/😴 (1).png'},
+      {'title': 'Stay Inspired', 'image': 'assets/How_help/💡.png'},
+      {'title': 'Animal', 'image': 'assets/How_help/🏋️ (1).png'},
+      {'title': 'Food', 'image': 'assets/How_help/🫂.png'},
+      {'title': 'Travel', 'image': 'assets/How_help/🧠.png'},
+      {'title': 'Books', 'image': 'assets/How_help/❤️_🩹.png'},
+      {'title': 'Games', 'image': 'assets/How_help/⚡.png'},
+      {'title': 'Art', 'image': 'assets/How_help/🎯 (1).png'},
     ];
     return Scaffold(
       backgroundColor: AppColors.primary,

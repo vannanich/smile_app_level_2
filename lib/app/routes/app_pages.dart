@@ -45,14 +45,14 @@ class AppPages {
       name: AppRoutes.login,
       page: () => LoginScreenView(),
       binding: LoginScreenViewBinding(),
-      transition: Transition.circularReveal,
+      transition: Transition.fade,
       transitionDuration: Duration(milliseconds: 900),
     ),
     GetPage(
       name: AppRoutes.survey_1,
       page: () => Survey1View(),
       binding: Survey1ViewBinding(),
-      transition: Transition.rightToLeft,
+      transition: Transition.native,
       transitionDuration: Duration(milliseconds: 900),
     ),
     GetPage(
